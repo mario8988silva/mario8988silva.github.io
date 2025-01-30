@@ -50,15 +50,17 @@ $mail->AltBody = $msgAEnviar;
 if(!$mail->send()) {
     // echo 'Message could not be sent.';
     // echo 'Mailer Error: ' . $mail->ErrorInfo;
-    header("Location: ../docs/form_success.html");
+    //header("Location: ../docs/form_success.html");
     //header("Location: https://joaogoncalves.github.io/sendmail/feedbackformerror.html");
+    header("Location: https://mario8988silva.github.io/docs/form_success.html");
     
 }
 
 // insere ou mensagem, ou chama o ficheiro .html de erro
 else {
     //echo 'Message has been sent.';
-    header("Location: ../docs/form_error.html");
+    //header("Location: ../docs/form_error.html");
     //header("Location: https://joaogoncalves.github.io/sendmail/feedbackform.html");
+    header("Location: https://mario8988silva.github.io/docs/form_error.html");
     
 }
